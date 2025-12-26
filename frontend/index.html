@@ -1,4 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BCA Notes - Registration</title>
+    <link rel="stylesheet" href="/frontend/css/styleR.css">
+</head>
+<body>
 
-<?php
-echo "Hello, World!";
-?>
+<div class="container">
+
+    <!-- Branding -->
+    <div class="branding">
+        <img src="/Images/Black Grey Minimalist Book Club Logo.gif" class="logo" alt="Logo">
+        <h1>Education Hub</h1>
+        <p>Student Registration</p>
+    </div>
+
+    <!-- Form -->
+    <form id="registerForm">
+
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter email" required>
+
+        <label>Mobile Number</label>
+        <input type="text" placeholder="Enter mobile number" required>
+
+        <label>Password</label>
+        <input type="password" placeholder="Create password" required>
+
+        <!-- Course Dropdown -->
+        <label>Which course have you studied?</label>
+        <select id="course" required>
+            <option value="" disabled selected>Select your course</option>
+            <option>BCA</option>
+            <option>MCA</option>
+            <option>BCS</option>
+            <option>BSc</option>
+        </select>
+
+        <!-- Checkboxes -->
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" required>
+                I agree to the Terms & Conditions
+            </label>
+
+            <label>
+                <input type="checkbox">
+                Send updates on WhatsApp
+            </label>
+        </div>
+
+        <button type="submit">Register</button>
+
+    </form>
+
+    <!-- Links -->
+    <div class="links">
+        <p>Already User?</p>
+        <a href="/frontend/login.html">Login</a>
+    </div>
+
+</div>
+
+</body>
+</html>
